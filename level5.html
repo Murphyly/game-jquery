@@ -2,7 +2,9 @@
 <html lang="pt">
 	<head>
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+     <link href="assets/css/level5.css" type="text/css" rel="stylesheet">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script src="jcanvas.min.js"></script>
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
@@ -13,8 +15,24 @@
 	</head>
 
 	<body>
-
+        <button class="menuButton">Menu</button>
+        <div class="imagem">
+            <div class="texto">
+                <span id="RGB"> RGB (0,0,0) </span>
+                <br/>
+                <canvas id="canvas"></canvas>
+                <canvas id="canvas"></canvas>
+                <canvas id="canvas"></canvas>
+                <canvas id="canvas"></canvas>
+            </div> 
+                <button class="button">Start</button>
+        </div>
+        <div id="R"></div>
+            <div id="G"></div>
+            <div id="B"></div>
+        
 	</body>
-	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/level5script.js"></script>
+    
 
 </html>

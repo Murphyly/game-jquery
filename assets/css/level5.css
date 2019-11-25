@@ -1,0 +1,86 @@
+body{
+    background-image: url(/assets/img/level5_background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:100% 100%;
+}
+
+.imagem{ 
+    background: url('/assets/img/background-preto-transparente.jpg');
+    width: 700px;
+    height: 400px;
+    margin: 100px auto;
+    filter: opacity(75%);
+}
+
+.texto{
+    color: white;
+    font-size: 100px;
+    font-family: Times;
+    text-align: center;
+    
+}
+
+#canvas{
+    width: 20%;
+	background: blue;
+	padding-bottom: 10%;
+	float: left;
+	margin: 2.5%;
+	border-radius: 5%;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+    margin-top: 15px;
+}
+
+.button {
+	background-color:chartreuse;
+	border-radius:6px;
+	border:1px solid #83c41a;
+	cursor:pointer;
+	color:#ffffff;
+
+    
+	padding:15px 50px;
+    margin-top: 190px;
+    margin-left: -60%;
+
+}
+.button:hover {
+	background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+	background-color:#a5cc52;
+}
+.button:active {
+    position:relative;
+    top:1px;
+}
+
+
+.menuButton {
+	background-color:crimson;
+	border-radius:3px;
+	border:1px solid #942911;
+	cursor:pointer;
+	color:#ffffff;
+    font-size: 13px;
+	padding:6px 24px;
+    transform: translate(10%, 50%);
+}
+.menuButton:hover {
+	background-color:#eb675e;
+}
+.menuButton:active {
+    position:relative;
+    top:1px;
+}
+
+#R, #G, #B{
+    color: white;
+    font-size: 50px;
+    font-family: Arial;
+    position: relative;
+}
+
+
