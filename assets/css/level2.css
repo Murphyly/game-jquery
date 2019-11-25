@@ -1,0 +1,8 @@
+body {
+    background-image: url('/assets/img/cover2.jpg') !important; 
+}
+
+.artefacts img ,
+.panel img {
+    width: 100px !important;
+}
