@@ -1,16 +1,13 @@
+var counter = 3;
+
 $(document).ready(function() {
     $(".menuButton").hide();
-    $("#R").hide();
-    $("#G").hide();
-    $("#B").hide();
     setRGB();
+    
     
     $(".button").click(function() {
         $(".imagem").fadeOut("fast", function(){});
         $(".menuButton").show("slow", function(){});
-        $("#R").show();
-        $("#G").show();
-        $("#B").show();
     })
     
     $(".menuButton").click(function() {
@@ -18,7 +15,50 @@ $(document).ready(function() {
         $(".menuButton").fadeOut("fast", function(){});
         $(".button").text("Resume");
     })
-     
+
+    var myR = "0";
+    var myG = "0";
+    var myB = "0";
+
+    $(".areaRGB").on({
+        mouseenter: function() { $(this).next().show(); },
+        mouseleave: function() { $(this).next().hide(); },
+        click: function() { 
+            if($(this).next().attr('id') == 'R') {
+                myR = $("#R").text();
+            } 
+            else if ($(this).next().attr('id') == 'G'){
+                myG = $("#G").text();
+            }
+            else {
+                myB = $("#B").text();
+            }
+            $("#RGB").text('RGB ('+ myR + ',' + myG + ',' + myB + ')')
+            $(this).next().off();
+            $(this).off();
+            counter--;
+            if(counter == 0){
+                $(".answer").show();
+            }
+        }
+    });
+    
+    $( ".RGB" ).each(function( i ) {
+        $(this).css({
+            marginTop: Math.min($(window).height(), Math.random() * 100),
+            marginLeft: Math.min($(window).height(), Math.random() * 1000)
+        });
+    });
+
+    $("canvas").click(function() {
+        if($(this).css("background-color") == ('rgb('+ myR + ', ' + myG + ', ' + myB + ')')){
+            alert('Parabéns você vai para a luta final com a bruxa!');
+        }
+        else {
+            alert('Você possui mais uma chance ou perder todos os itens!');
+        }
+    });
+    
 });
 
 function generateArrayColors (num) {
@@ -39,7 +79,7 @@ function generateRandomRGB() {   //Gera um RGB aleatorio
 }
 
 function setRGB(){
-    var canvas = document.querySelectorAll("#canvas");
+    var canvas = document.querySelectorAll("canvas");
     var colors = [];
     var colors = generateArrayColors(canvas.length);
     for(var i=0; i<canvas.length; i++){
@@ -49,7 +89,7 @@ function setRGB(){
     setupMap(colors, canvas.length);
     
 }
- 
+
 function setupMap(Array, num){
     var RGB = getRandomColorOfArray(Array, num);
     var R = "";
@@ -65,9 +105,9 @@ function setupMap(Array, num){
     G = getGfromRGB(RGB, tamanho);
     B = getBfromRGB(RGB, tamanho);
     
-    randomizerPosition("#R");
-    randomizerPosition("#G");
-    randomizerPosition("#B");
+    // randomizerPosition("#R");
+    // randomizerPosition("#G");
+    // randomizerPosition("#B");
     
     $("#R").text(R);
     $("#G").text(G);
@@ -132,16 +172,4 @@ function getBfromRGB(String, Number){
         }
     }
     return B;
-}
-
-function randomizerPosition(String){
-    var bodyWidth = document.body.clientWidth;
-    var bodyHeight = document.body.clientHeight;
-
-    var randPosX = Math.floor((Math.random()*bodyWidth));
-    var randPosY = Math.floor((Math.random()*bodyHeight));
-   
-    $(String).css("left", randPosX);
-    $(String).css("top", randPosY);
-       
 }

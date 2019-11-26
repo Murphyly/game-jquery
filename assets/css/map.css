@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 40px;
+    /* font-family: 'Almendra Display', cursive; */
+    color: blanchedalmond;
+  }
+
+  #map {
+    background-color: #395D33;
+    background-image: url('/assets/img/map.png');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  #avatar {
+    position: absolute;
+    background-image: url('/assets/img/avatar.png');
+    background-position: 0px 0px; 
+    height: 62px;
+    width: 31px;
+  }
+  #avatar[data-dir='up'] {
+    background-position: 0px -126px;
+  }
+  #avatar[data-dir='left'] {
+    background-position: 0px -60px;
+  }
+  #avatar[data-dir='right'] {
+    background-position: 0px -192px;
+  }
+  #avatar[data-moving='true'][data-dir='down'] {
+    animation: dirDown 1.2s step-start infinite;
+  }
+  #avatar[data-moving='true'][data-dir='left'] {
+    animation: dirLeft 1.2s step-start infinite;
+  }
+  #avatar[data-moving='true'][data-dir='up'] {
+    animation: dirUp 1.2s step-start infinite;
+  }
+  #avatar[data-moving='true'][data-dir='right'] {
+    animation: dirRight 1.2s step-start infinite;
+  }
+  @keyframes  dirDown{
+    0% {
+      background-position: 0px 0px;
+    }
+    20% {
+      background-position: -31px 0px;
+    }
+    40% {
+      background-position: 31px 0px;
+    }
+    60% {
+      background-position: 63px 0px;
+    }
+    80% {
+      background-position: -63px 0px;
+    }
+    100% {
+      background-position: 97px 0px;
+    }
+  }
+  @keyframes  dirLeft {
+    0% {
+      background-position: 0px -60px;
+    }
+    20% {
+      background-position: -31px -60px;
+    }
+    40% {
+      background-position: 31px -60px;
+    }
+    60% {
+      background-position: 63px -60px;
+    }
+    80% {
+      background-position: -63px -60px;
+    }
+    100% {
+      background-position: 97px -60px;
+    }
+  }
+  @keyframes  dirUp {
+    0% {
+      background-position: 0px -126px;
+    }
+    20% {
+      background-position: -33px -126px;
+    }
+    40% {
+      background-position: 34px -126px;
+    }
+    60% {
+      background-position: 65px -126px;
+    }
+    80% {
+      background-position: -65px -126px;
+    }
+    100% {
+      background-position: 97px -126px;
+    }
+  }
+  @keyframes  dirRight {
+    0% {
+      background-position: 0px -192px;
+    }
+    20% {
+      background-position: -34px -192px;
+    }
+    40% {
+      background-position: 34px -192px;
+    }
+    60% {
+      background-position: 65px -192px;
+    }
+    80% {
+      background-position: -65px -192px;
+    }
+    100% {
+      background-position: 97px -192px;
+    }
+  }
+
+  .pulse-button {
+    box-shadow: 0 0 0 0 rgba(86, 139, 15, 0.5); 
+    animation: pulse 5s infinite;
+    -webkit-animation: pulse 5s infinite;
+    }
+    
+    .pulse-button:hover {
+      animation: none;
+    -webkit-animation: none;
+    }
+    
+    @-webkit-keyframes pulse {
+    0% {
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+    70% {
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+    }
+    100% {
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+    70% {
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+    }
+    100% {
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+    }
+  }
+
+#dialogo {
+  height: 100px !important;
+  position: fixed;
+  top: 100;
+  right: 0;
+  width: 300px !important;
+}

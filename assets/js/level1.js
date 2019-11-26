@@ -2,7 +2,7 @@ var contIMG = 5, chance = 2;;
 
 $(document).ready(function () {
 
-    createDialogo("Bem vindo ao resgate do 1º / 4º artefato, encontre as 6 imagens escondidas para liberar o enigma")
+    createDialogo("Bem vindo ao resgate do 1º dos 4 artefatos, encontre as 6 pistas escondidas pela esquerda, passando o mouse                   até a pista ficar vísivel e então clique na pista encontrada, ao achar todas as 6 pistas, o enigma será liberado.")
     
     $( ".artefacts" ).each(function( i ) {
         $(this).css({
@@ -35,7 +35,7 @@ function compara () {
         window.location.replace("level2.html");
     }
     else if (chance > 0){
-        createDialogo("Você possui mais " + chance + " chance(s)  para conseguir o 1º artefato mágico");
+        createDialogo("Possui mais " + chance + " chance(s)");
         chance--;
     }
     else {

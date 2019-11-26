@@ -18,7 +18,6 @@ function createDialogo ( dialogs ) {
             j = 0;
           }
           if (i == dialogo.length-1 ) {
-          $('#dialogo').prepend('<div id="arrow"></div>');
           Mousetrap.bind('enter', function() {
               if (dialogs[cont+1]) {
               $('#dialogo').text('');
@@ -28,7 +27,7 @@ function createDialogo ( dialogs ) {
               }
           });
           }
-      }, 100*i); 
+      }, 90*i); 
     }(i));
   }
 }

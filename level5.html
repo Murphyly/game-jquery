@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt">
 	<head>
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-     <link href="assets/css/level5.css" type="text/css" rel="stylesheet">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-        <script src="jcanvas.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/21.0.1/min/jcanvas.min.js"></script>
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
 	  <title>Asgarned - Level 5</title>
 	  <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
 	  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	  <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+      <link href="assets/css/level5.css" type="text/css" rel="stylesheet">
 	</head>
 
 	<body>
         <button class="menuButton">Menu</button>
         <div class="imagem">
             <div class="texto">
-                <span id="RGB"> RGB (0,0,0) </span>
-                <br/>
-                <canvas id="canvas"></canvas>
-                <canvas id="canvas"></canvas>
-                <canvas id="canvas"></canvas>
-                <canvas id="canvas"></canvas>
+                <span id="RGB"> RGB (0,0,0)</span>
+                <h5 class="answer">Qual das cores abaixo representa o RGB acima? Você possui 2 chances</h5>   
+                <div>
+                    <canvas></canvas>
+                    <canvas></canvas>
+                    <canvas></canvas>
+                    <canvas></canvas>
+                </div>    
             </div> 
+            <div class="center">
                 <button class="button">Start</button>
+            </div>
         </div>
-        <div id="R"></div>
-            <div id="G"></div>
-            <div id="B"></div>
+        <section class="RGB">
+            <div class="areaRGB"></div>
+            <h1 id="R">
+        </section>
+        <section class="RGB">
+            <div class="areaRGB"></div>
+            <h1 id="G">
+        </section>
+        <section class="RGB">
+            <div class="areaRGB"></div>
+            <h1 id="B">
+        </section>
         
-	</body>
+    </body>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 	<script type="text/javascript" src="assets/js/level5script.js"></script>
     
 

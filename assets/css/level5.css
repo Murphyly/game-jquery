@@ -1,5 +1,5 @@
 body{
-    background-image: url(/assets/img/level5_background.png);
+    background-image: url('/assets/img/level5_background.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -12,17 +12,18 @@ body{
     height: 400px;
     margin: 100px auto;
     filter: opacity(75%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .texto{
     color: white;
-    font-size: 100px;
-    font-family: Times;
+    font-size: 80px;
     text-align: center;
-    
 }
 
-#canvas{
+canvas{
     width: 20%;
 	background: blue;
 	padding-bottom: 10%;
@@ -32,7 +33,12 @@ body{
 	transition: background 0.6s;
 	-webkit-transition: background 0.6s;
 	-moz-transition: background 0.6s;
-    margin-top: 15px;
+    margin-top: 1%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
 }
 
 .button {
@@ -40,14 +46,11 @@ body{
 	border-radius:6px;
 	border:1px solid #83c41a;
 	cursor:pointer;
-	color:#ffffff;
-
-    
+    color:#1d1818;
+    font-size: 20px;
 	padding:15px 50px;
-    margin-top: 190px;
-    margin-left: -60%;
-
 }
+
 .button:hover {
 	background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
 	background-color:#a5cc52;
@@ -78,9 +81,29 @@ body{
 
 #R, #G, #B{
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     font-family: Arial;
+    position: relative;
+    display: none;
+    z-index: 10;
+}
+
+.areaRGB {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 30px;
+    width: 40px;
+    border-radius: 40%;
     position: relative;
 }
 
+.RGB {
+    display: inline-flex;
+}
 
+.answer {
+    display: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}

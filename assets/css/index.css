@@ -26,9 +26,9 @@ body {
 @-webkit-keyframes showing {
   from {
     -moz-transform: scale(1.5);
-	  -ms-transform: scale(1.5);
-	  -webkit-transform: scale(1.5);
-	  transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
   }
 
   to {
@@ -43,16 +43,16 @@ body {
 @keyframes showing {
   from {
     -moz-transform: scale(1.5);
-	  -ms-transform: scale(1.5);
-	  -webkit-transform: scale(1.5);
-	  transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
   }
 
   to {
     -moz-transform: scale(0.9);
-	  -ms-transform: scale(0.9);
-	  -webkit-transform: scale(0.9);
-	  transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
   }
 }
 
