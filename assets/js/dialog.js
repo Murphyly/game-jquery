@@ -18,14 +18,14 @@ function createDialogo ( dialogs ) {
             j = 0;
           }
           if (i == dialogo.length-1 ) {
-          Mousetrap.bind('enter', function() {
-              if (dialogs[cont+1]) {
-              $('#dialogo').text('');
-              cont += 1;
-              Textdialogo = dialogs[cont].split('');
-              createDialogo( Textdialogo );
-              }
-          });
+            Mousetrap.bind('enter', function() {
+                if (dialogs[cont+1]) {
+                $('#dialogo').text('');
+                cont += 1;
+                Textdialogo = dialogs[cont].split('');
+                createDialogo( Textdialogo );
+                }
+            });
           }
       }, 90*i); 
     }(i));

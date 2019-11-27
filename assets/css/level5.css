@@ -34,6 +34,15 @@ canvas{
 	-webkit-transition: background 0.6s;
 	-moz-transition: background 0.6s;
     margin-top: 1%;
+    transition: transform .2s;
+}
+
+canvas:hover{
+    transform: scale(1.2);
+}
+
+canvas:active{
+    background-color: darkmagenta;
 }
 
 .center {

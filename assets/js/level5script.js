@@ -1,4 +1,5 @@
 var counter = 3;
+var chance = 2;
 
 $(document).ready(function() {
     $(".menuButton").hide();
@@ -51,11 +52,20 @@ $(document).ready(function() {
     });
 
     $("canvas").click(function() {
-        if($(this).css("background-color") == ('rgb('+ myR + ', ' + myG + ', ' + myB + ')')){
+        if(chance > 0 && counter == 0 && $(this).css("background-color") == ('rgb('+ myR + ', ' + myG + ', ' + myB + ')')){
             alert('Parabéns você vai para a luta final com a bruxa!');
+            window.location.replace("level6.html");
+        }
+        else if (counter == 0 && chance > 0){
+            alert('Você possui mais uma chance ou perder todos os itens!');
+            chance--;
         }
         else {
-            alert('Você possui mais uma chance ou perder todos os itens!');
+            lifeLess();
+            if (life > 0) {
+                chance = 2;
+                alert("Menos 1 vida, você possui mais " + chance + " (duas) chances para conseguir encontrar a localização do covil da bruxa");
+            }
         }
     });
     

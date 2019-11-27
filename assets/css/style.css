@@ -20,6 +20,7 @@ body{
   text-decoration: none;
   padding-top: 1%;
   z-index: 1059;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .btn:hover,
@@ -46,9 +47,8 @@ body{
 
 .itens {
   height: 70px;
-  background: rgb(53, 11, 44);
+  background: rgb(42, 179, 150);
   border-radius: 5px;
-  color: #F5EAC8;
   font-family: Arial;
   font-size: 12px;
   font-weight: bold;
@@ -65,5 +65,4 @@ body{
 .itens img{
   width: 20%;
   height: 60%;
-  display: none;
 }

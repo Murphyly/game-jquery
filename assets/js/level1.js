@@ -2,7 +2,7 @@ var contIMG = 5, chance = 2;;
 
 $(document).ready(function () {
 
-    createDialogo("Bem vindo ao resgate do 1º dos 4 artefatos, encontre as 6 pistas escondidas pela esquerda, passando o mouse                   até a pista ficar vísivel e então clique na pista encontrada, ao achar todas as 6 pistas, o enigma será liberado.")
+    createDialogo("Bem vindo ao resgate do 1º dos 4 artefatos, encontre as 6 pistas escondidas pela esquerda, passando o mouse                   até a pista ficar vísivel e então clique na pista encontrada! ao achar todas as 6 pistas, o enigma será liberado.")
     
     $( ".artefacts" ).each(function( i ) {
         $(this).css({
@@ -39,15 +39,11 @@ function compara () {
         chance--;
     }
     else {
-        // life--;
-        // if (life <= 0){
-            alert("Acabaram as vidas, volte ao começo e recupere-se")
-            window.location.replace("index.html");
-        // }
-        // else {
-        //     createDialogo("Menos 1 vida, você possui mais " + chance + " (duas) chances para conseguir o 1º artefato mágico");
-        //     chance = 2;
-        // }
+        lifeLess();
+        if (life > 0) {
+            chance = 2;
+            createDialogo("Menos 1 vida, você possui mais " + chance + " (duas) chances para conseguir o 1º artefato mágico");
+        }
     }
     $('#dialogo').text(" ");
 }

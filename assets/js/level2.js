@@ -32,23 +32,19 @@ $(document).ready(function () {
 
 function compara () {
     if($('input').val() == "POKEMON" || $('input').val() == "pokemon" || $('input').val() == "Pókemon" || $('input').val() == "PÓKEMON") {
-        createDialogo("Parabéns! Você conseguiu resgatar o 1º artefato mágico");
+        createDialogo("Parabéns! Você conseguiu resgatar o 2º artefato mágico");
         window.location.replace("level3.html");
     }
     else if (chance > 0){
-        createDialogo("Você possui mais " + chance + " chance(s)  para conseguir o 1º artefato mágico");
+        createDialogo("Possui mais " + chance + " chance(s)");
         chance--;
     }
     else {
-        // life--;
-        // if (life <= 0){
-            alert("Acabaram as vidas, volte ao começo e recupere-se")
-            window.location.replace("index.html");
-        // }
-        // else {
-        //     createDialogo("Menos 1 vida, você possui mais " + chance + " (duas) chances para conseguir o 1º artefato mágico");
-        //     chance = 2;
-        // }
+        lifeLess();
+        if (life > 0) {
+            chance = 2;
+            createDialogo("Menos 1 vida, você possui mais " + chance + " (duas) chances para conseguir o 2º artefato mágico");
+        }
     }
     $('#dialogo').text(" ");
 }
