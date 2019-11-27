@@ -32,7 +32,9 @@ $(document).ready(function () {
 
 function compara () {
     if($('input').val() == "LA CASA DE PAPEL" || $('input').val() == "la casa de papel" || $('input').val() == "La casa de papel" || $('input').val() == "La Casa De Papel" || $('input').val() == "LACASADEPAPEL" || $('input').val() == "lacasadepapel" || $('input').val() == "Lacasadepapel" || $('input').val() == "LaCasaDePapel" ) {
+        alert("O 4º artefato mágico é o fio drónius de um unicórnio ");
         createDialogo("Parabéns! Você conseguiu resgatar o 4º artefato mágico");
+        item = $('.item-content').html('<img src="assets/img/item4.png"/>');
         window.location.replace("level5.html");
     }
     else if (chance > 0){

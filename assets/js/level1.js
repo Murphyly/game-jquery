@@ -33,6 +33,7 @@ $(document).ready(function () {
 
 function compara () {
     if($('input').val() == "Game of Thrones" || $('input').val() == "game of thrones" || $('input').val() == "GOT" || $('input').val() == "got" || $('input').val() == "GAME OF THRONES") {
+        alert("O 1º artefato mágico é o dente de dragão");
         createDialogo("Parabéns! Você conseguiu resgatar o 1º artefato mágico");
         item = $('.item-content').html('<img src="assets/img/item1.png"/>');
         setInterval(function(){window.location.replace("level2.html")}, 3000);

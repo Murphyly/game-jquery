@@ -32,7 +32,9 @@ $(document).ready(function () {
 
 function compara () {
     if($('input').val() == "TITANIC" || $('input').val() == "titanic" || $('input').val() == "Titanic") {
+        alert("O 3º artefato mágico é um galho do carvalho de Nimloth");
         createDialogo("Parabéns! Você conseguiu resgatar o 3º artefato mágico");
+        item = $('.item-content').html('<img src="assets/img/item3.png"/>');
         window.location.replace("level4.html");
     }
     else if (chance > 0){

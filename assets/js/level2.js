@@ -32,7 +32,9 @@ $(document).ready(function () {
 
 function compara () {
     if($('input').val() == "POKEMON" || $('input').val() == "pokemon" || $('input').val() == "Pókemon" || $('input').val() == "PÓKEMON") {
+        alert("O 2º artefato mágico é um galho da árvore dos sonhos");
         createDialogo("Parabéns! Você conseguiu resgatar o 2º artefato mágico");
+        item = $('.item-content').html('<img src="assets/img/item2.png"/>');
         window.location.replace("level3.html");
     }
     else if (chance > 0){
