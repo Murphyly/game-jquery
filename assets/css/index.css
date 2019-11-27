@@ -3,6 +3,11 @@ body {
     text-align: center;
 }
 
+.btn {
+	position: fixed;
+	bottom: 5%;
+}
+
 .cover {
     min-height: 500px;
     display: flex;
