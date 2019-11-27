@@ -13,12 +13,24 @@
 	</head>
 
 	<body>
+    <section class="itens">
+            <label>Artefatos</label>
+            <div class="item-content">
+                <img src="/assets/img/item1.png"/>
+                <img src="/assets/img/item2.png"/>
+                <img src="/assets/img/item3.png"/>
+                <img src="/assets/img/item4.png"/>
+            </div>
+            <label>Energia</label>
+            <div class="energy-content"></div>
+        </section>
         <button class="menuButton">Menu</button>
         <div class="imagem">
             <div class="texto">
                 <span id="RGB"> RGB (0,0,0)</span>
+                <div id="dialogo"></div>
                 <h5 class="answer">Qual das cores abaixo representa o RGB acima? Você possui 2 chances</h5>   
-                <div>
+                <div id="canva">
                     <canvas></canvas>
                     <canvas></canvas>
                     <canvas></canvas>
@@ -44,6 +56,7 @@
         
     </body>
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/dialog.js"></script>
 	<script type="text/javascript" src="assets/js/level5script.js"></script>
     
 

@@ -4,7 +4,7 @@ var item;
 
 $(document).ready(function () {
 
-    createDialogo("Bem vindo ao resgate do 1º dos 4 artefatos, encontre as 6 pistas escondidas pela esquerda, passando o mouse                   até a pista ficar vísivel e então clique na pista encontrada! ao achar todas as 6 pistas, o enigma será liberado.")
+    createDialogo("Bem vindo ao resgate do 1º dos 4 artefatos, encontre as 5 pistas escondidas pela esquerda, passando o mouse                   até a pista ficar vísivel e então clique na pista encontrada! ao achar todas as 6 pistas, o enigma será liberado.")
     
     $( ".artefacts" ).each(function( i ) {
         $(this).css({

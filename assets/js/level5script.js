@@ -2,6 +2,9 @@ var counter = 3;
 var chance = 2;
 
 $(document).ready(function() {
+
+    createDialogo('Bem vindo ao portal das cores. Para chegar no covil da bruxa aperte start e encontre os 3 conjuntos de número que dirão onde fica a casa da bruxa com coordenadas do mundo das cores');
+
     $(".menuButton").hide();
     setRGB();
     
@@ -39,10 +42,13 @@ $(document).ready(function() {
             $(this).off();
             counter--;
             if(counter == 0){
+                $("#dialogo").remove();
+                $("#canva").show();
                 $(".answer").show();
             }
         }
     });
+
     
     $( ".RGB" ).each(function( i ) {
         $(this).css({

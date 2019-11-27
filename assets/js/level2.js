@@ -2,7 +2,7 @@ var contIMG = 5, chance = 2;;
 
 $(document).ready(function () {
 
-    createDialogo("Bem vindo à Gondorny, encontre as 6 pistas que liberarão o 2º enigma")
+    createDialogo("Bem vindo à Gondorny, encontre as 5 pistas que liberarão o 2º enigma")
     
     $( ".artefacts" ).each(function( i ) {
         $(this).css({

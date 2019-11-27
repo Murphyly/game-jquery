@@ -116,3 +116,7 @@ canvas:active{
     padding: 0;
     margin: 0;
 }
+
+#canva {
+    display: none;
+}
