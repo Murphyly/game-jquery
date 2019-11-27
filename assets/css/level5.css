@@ -1,5 +1,5 @@
 body{
-    background-image: url('/assets/img/level5_background.png');
+    background-image: url('../img/level5_background.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -7,7 +7,7 @@ body{
 }
 
 .imagem{ 
-    background: url('/assets/img/background-preto-transparente.jpg');
+    background: url('../img/background-preto-transparente.jpg');
     width: 700px;
     height: 400px;
     margin: 100px auto;

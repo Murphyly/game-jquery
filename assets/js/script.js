@@ -3,7 +3,7 @@ var blockStorage;
 
 function lifeLoad ( ) {
     for(var i = 0; i < life ; i++) {
-        $('.energy-content').html($('.energy-content').html() + '<img src="/assets/img/potion.png"/>');
+        $('.energy-content').html($('.energy-content').html() + '<img src="assets/img/potion.png"/>');
     }
 }
 

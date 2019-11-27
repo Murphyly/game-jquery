@@ -31,25 +31,25 @@ $(document).ready(function(){
     createDialogo("Uma guerreira precisa salvar um elfo que nasceu com o fio de corbérculos, um fio que só é gerado a cada 200 anos e dá ao     recém-nascido o poder de controlar qualquer exército de elfos, podendo dominar a dimensão, uma bruxa de Espenldighor esperou 200 anos para sequestrar o elfo, agora você precisa atravessar os portais em 4 dimensões diferentes e decifrar 4 enigmas para conseguir os artefatos mágicos que poderão derrotar a bruxa, ande até o primeiro portal para sua primeira aventura em        Elrigonrd");
 
     $("canvas").drawImage({
-        source: '/assets/img/portal.png',
+        source: 'assets/img/portal.png',
         x: 60,
         y: 140
     });
 
     $("canvas").drawImage({
-        source: '/assets/img/portal2.png',
+        source: 'assets/img/portal2.png',
         x: 300,
         y: 60
     });
 
     $("canvas").drawImage({
-        source: '/assets/img/portal4.png',
+        source: 'assets/img/portal4.png',
         x: 550,
         y: 200
     });
 
     $("canvas").drawImage({
-        source: '/assets/img/portal3.png',
+        source: 'assets/img/portal3.png',
         x: 750,
         y: 50
     });

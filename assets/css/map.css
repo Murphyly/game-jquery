@@ -12,14 +12,14 @@ body {
 
   #map {
     background-color: #395D33;
-    background-image: url('/assets/img/map.png');
+    background-image: url('../img/map.png');
     position: absolute;
     height: 100%;
     width: 100%;
   }
   #avatar {
     position: absolute;
-    background-image: url('/assets/img/avatar.png');
+    background-image: url('../img/avatar.png');
     background-position: 0px 0px; 
     height: 62px;
     width: 31px;
