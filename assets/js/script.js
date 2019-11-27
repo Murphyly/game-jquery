@@ -30,9 +30,8 @@ $(document).ready(function() {
         life = 5;
         blockStorage = true;
     }
-    else {
-        life = localStorage.getItem("storyLife");
-    }
+
+    life = localStorage.getItem("storyLife");
 
     lifeLoad( );
 

@@ -46,7 +46,7 @@ body{
 }
 
 .itens {
-  height: 70px;
+  height: 20%;
   background: rgb(42, 179, 150);
   border-radius: 5px;
   font-family: Arial;

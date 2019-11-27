@@ -1,4 +1,6 @@
-var contIMG = 5, chance = 2;;
+var contIMG = 5;
+var chance = 2;
+var item;
 
 $(document).ready(function () {
 
@@ -32,7 +34,8 @@ $(document).ready(function () {
 function compara () {
     if($('input').val() == "Game of Thrones" || $('input').val() == "game of thrones" || $('input').val() == "GOT" || $('input').val() == "got" || $('input').val() == "GAME OF THRONES") {
         createDialogo("Parabéns! Você conseguiu resgatar o 1º artefato mágico");
-        window.location.replace("level2.html");
+        item = $('.item-content').html('<img src="/assets/img/item1.png"/>');
+        setInterval(function(){window.location.replace("level2.html")}, 3000);
     }
     else if (chance > 0){
         createDialogo("Possui mais " + chance + " chance(s)");
