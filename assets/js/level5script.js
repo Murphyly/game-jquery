@@ -11,11 +11,13 @@ $(document).ready(function() {
     
     $(".button").click(function() {
         $(".imagem").fadeOut("fast", function(){});
+        $(".itens").fadeOut("fast", function(){});
         $(".menuButton").show("slow", function(){});
     })
     
     $(".menuButton").click(function() {
         $(".imagem").fadeIn("100", function(){});
+        $(".itens").fadeIn("100", function(){});
         $(".menuButton").fadeOut("fast", function(){});
         $(".button").text("Resume");
     })
@@ -45,6 +47,8 @@ $(document).ready(function() {
                 $("#dialogo").remove();
                 $("#canva").show();
                 $(".answer").show();
+                $(".imagem").fadeIn("100", function(){});
+                $(".itens").fadeIn("100", function(){});
             }
         }
     });
@@ -53,7 +57,7 @@ $(document).ready(function() {
     $( ".RGB" ).each(function( i ) {
         $(this).css({
             marginTop: Math.min($(window).height(), Math.random() * 100),
-            marginLeft: Math.min($(window).height(), Math.random() * 1000)
+            marginLeft: Math.min($(window).height(), Math.random() * 100)
         });
     });
 
