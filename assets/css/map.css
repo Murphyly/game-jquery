@@ -8,6 +8,7 @@ body {
     background-color: brown;
     font-family: 'Almendra Display', cursive; */
     color: blanchedalmond;
+    position:fixed;
   }
 
   #map {
